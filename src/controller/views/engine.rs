@@ -17,6 +17,7 @@ pub struct TeraView {
     #[cfg(debug_assertions)]
     pub view_dir: String,
 
+    #[cfg(debug_assertions)]
     pub tera_post_process:
         Option<std::sync::Arc<dyn Fn(&mut tera::Tera) -> Result<()> + Send + Sync>>,
 
